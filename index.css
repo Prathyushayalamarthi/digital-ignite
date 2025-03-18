@@ -1,0 +1,119 @@
+.hometab{
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    background-color: #333;
+    
+}
+.hometab li{
+    margin-right: 20px;
+    float:left;
+}
+.hometab li:last-child{
+    margin-right: 0;
+}
+.hometab li a {
+    display: flex;
+    color: white;
+    text-align:unset;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.hero {
+    text-align: center;
+    padding: 20px 20px;
+    color: #111;
+    border-radius: 5px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #c0392b;
+}
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h2 {
+    cursor: pointer;
+    color: #21a93c;
+}
+.content {
+    display: none;
+    margin-top: 10px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background: #34495e;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+.success {
+    color: green;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 10px;
+}
+footer {
+    background-color: #111;
+    color: white;
+
+}
+.contact {
+        max-width: 1000px;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+}

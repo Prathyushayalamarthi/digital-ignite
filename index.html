@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Improving SEO Performace</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <ul class="hometab">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a  href="https://digitalignite.org/">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="services.html">Services ▼</a>
+        </ul>
+        <header>
+           <marquee><h1>SEO Performance Improvement Plan</h1>
+            <p>Boost Your Website’s Ranking with Effective Strategies</p></marquee> 
+        </header>
+        <div class="container">
+            <div class="hero">
+                <h2 style="color:blueviolet">Want Better SEO Rankings?</h2>
+                <p>To achieve better SEO rankings, focus on high-quality content, targeted keywords, and on-page optimization (meta tags, headers, and internal linking). Build high-authority backlinks, improve page speed, and ensure mobile-friendliness. Regularly update content, optimize for search intent, and leverage structured data (schema markup) to enhance visibility. </p>
+            </div>
+        </div>
+            <div class="container">
+                <h1 style="color:crimson">SEO Performance Improvement Plan</h1>
+                <h2 onclick="toggleSection(this)">1. Keyword Research</h2>
+                <div class="section content">
+                    <ul type="none">
+                        <p><li><strong>Local SEO strategies for small businesses</strong><br> - Targets local businesses looking for better visibility.</li></p>
+                        <p><li><strong>Content marketing trends 2025</strong><br> - Focuses on upcoming trends to keep businesses updated.</li></p>
+                        <p><li><strong>Affordable digital marketing services</strong> <br>- Attracts businesses looking for cost-effective solutions.</li></p>
+                        <p><li><strong>Benefits of influencer marketing for brands</strong> <br>- Explains how brands can leverage influencers.</li></p>
+                        <p><li><strong>Effective social media advertising techniques</strong> <br>- Helps businesses improve their advertising strategies.</li></p>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <h2 onclick="toggleSection(this)">2. On-Page Optimization 🛠</h2>
+                <div class="content">
+                    <h3>Meta Title & Description</h3>
+                    <p class="meta"><strong>Meta Title:</strong> Affordable Digital Marketing Services | Boost Your Business Online</p>
+                    <p class="meta"><strong>Meta Description:</strong> Discover affordable digital marketing services designed for small businesses.</p>
+        
+                    <h3>Suggested Headings for Blog Post</h3>
+                    <ul type="none">
+                        <li> Top Local SEO Strategies Every Small Business Should Implement</li>
+                        <li> Understanding the Importance of Local SEO</li>
+                        <li> Optimizing Your Google My Business Profile</li>
+                        <li> How to Claim and Verify Your Listing</li>
+                        <li>Tips for Maintaining Accurate NAP (Name, Address, Phone Number) Information</li>
+                    </ul>
+                </div>
+            <div class="section">
+                <h2 onclick="toggleSection(this)">3. Content Strategy ✍️</h2>
+                <div class="content">
+                    <h3>Month 1: Foundation & Research</h3>
+SEO Audit:
+Conduct a thorough technical SEO audit to identify and address any issues like broken links, slow page speed, or poor mobile optimization.<br>
+<h4>Keyword Research:</h4>
+Identify relevant keywords and phrases your target audience is using to search for your products or services.<br> 
+<h4>Competitive Analysis:</h4>
+Analyze your competitors' SEO strategies and identify areas where you can outperform them.<br> 
+<h4>On-Page Optimization:</h4>
+Optimize your website's content, meta descriptions, and other on-page elements for the identified keywords.<br>
+<h4>Content Strategy:</h4>
+Develop a content calendar and plan for creating high-quality, engaging content that addresses your target audience's needs.<br>
+<h3>Month 2: Content Creation & Optimization</h3>
+<h4>Content Creation:</h4>
+Start creating and publishing content based on your content calendar, ensuring it's optimized for SEO and user experience.<br>
+<h4>On-Page Optimization:</h4>
+Continue optimizing your website's content and pages for the target keywords, focusing on readability and user experience.<br>
+<h4>Backlink Building:</h4>
+Start building a strong backlink profile by focusing on acquiring high-quality backlinks from reputable sources.<br> 
+<h4>Technical SEO:</h4>
+Implement any necessary technical SEO fixes identified in the audit, such as improving website speed and mobile-friendliness.<br> 
+<h3>Month 3: Analysis & Refinement</h3>
+<p>Performance Analysis: Track your website's performance using analytics tools to identify what's working and what's not.<br> 
+<h4>Keyword Ranking:</h4> Monitor your keyword rankings and adjust your strategy accordingly.<br>
+<h4>Content Optimization:</h4> Refine your content based on performance data and user feedback.<br> 
+<h4>Backlink Monitoring:</h4> Track your backlink profile and identify any issues or opportunities.<br> 
+<h4>Future Strategy:</h4>Develop a long-term SEO strategy based on the insights gained during the first three months.</p>
+                </div>
+            </div>
+    <footer>
+        
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any queries, please fill out the form below:</p>
+        <form id="queryForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <p class="error" id="nameError"></p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <p class="error" id="emailError"></p>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" placeholder="Enter subject">
+            <p class="error" id="subjectError"></p>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+            <p class="error" id="messageError"></p>
+
+            <button type="button" onclick="validateForm()">Submit</button>
+            <p class="success" id="successMessage"></p>
+        </form>
+    </div>
+    </footer>
+            <script>
+                function toggleSection(element) {
+                    let content = element.nextElementSibling;
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                }
+                function validateForm() {
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let subject = document.getElementById("subject").value.trim();
+            let message = document.getElementById("message").value.trim();
+            
+            let isValid = true;
+
+            document.getElementById("nameError").innerText = name ? "" : "Name is required.";
+            document.getElementById("emailError").innerText = email.includes("@") ? "" : "Valid email is required.";
+            document.getElementById("subjectError").innerText = subject ? "" : "Subject is required.";
+            document.getElementById("messageError").innerText = message ? "" : "Message cannot be empty.";
+
+            if (!name || !email.includes("@") || !subject || !message) {
+                isValid = false;
+            }
+
+            if (isValid) {
+                document.getElementById("successMessage").innerText = "Your query has been submitted successfully!";
+                document.getElementById("queryForm").reset();
+            }
+        }
+        function toggleMenu() {
+            let menu = document.getElementById("navMenu");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+            </script>
+    
+    
+    </body>
+</html>

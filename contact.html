@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            footer {
+    background-color: #111;
+    color: white;
+
+}
+.contact {
+        max-width: 1000px;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+}
+        </style>
+    </head>
+    <body>
+        <footer>
+        
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any queries, please fill out the form below:</p>
+                <form id="queryForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <p class="error" id="nameError"></p>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <p class="error" id="emailError"></p>
+        
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" placeholder="Enter subject">
+                    <p class="error" id="subjectError"></p>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+                    <p class="error" id="messageError"></p>
+        
+                    <button type="button" onclick="validateForm()">Submit</button>
+                    <p class="success" id="successMessage"></p>
+                </form>
+            </div>
+            </footer>
+                    <script>
+                        function toggleSection(element) {
+                            let content = element.nextElementSibling;
+                            content.style.display = content.style.display === "block" ? "none" : "block";
+                        }
+                        function validateForm() {
+                    let name = document.getElementById("name").value.trim();
+                    let email = document.getElementById("email").value.trim();
+                    let subject = document.getElementById("subject").value.trim();
+                    let message = document.getElementById("message").value.trim();
+                    
+                    let isValid = true;
+        
+                    document.getElementById("nameError").innerText = name ? "" : "Name is required.";
+                    document.getElementById("emailError").innerText = email.includes("@") ? "" : "Valid email is required.";
+                    document.getElementById("subjectError").innerText = subject ? "" : "Subject is required.";
+                    document.getElementById("messageError").innerText = message ? "" : "Message cannot be empty.";
+        
+                    if (!name || !email.includes("@") || !subject || !message) {
+                        isValid = false;
+                    }
+        
+                    if (isValid) {
+                        document.getElementById("successMessage").innerText = "Your query has been submitted successfully!";
+                        document.getElementById("queryForm").reset();
+                    }
+                }
+                function toggleMenu() {
+                    let menu = document.getElementById("navMenu");
+                    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+                }
+                    </script>
+            
+    </body>
+</html>
